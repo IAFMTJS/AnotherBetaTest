@@ -1,0 +1,100 @@
+{
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "ecmaVersion": 2022,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true,
+            "arrowFunctions": true,
+            "templateStrings": true,
+            "blockBindings": true,
+            "classes": true,
+            "defaultParams": true,
+            "destructuring": true,
+            "forOf": true,
+            "generators": true,
+            "objectLiteralComputedProperties": true,
+            "objectLiteralShorthandMethods": true,
+            "objectLiteralShorthandProperties": true,
+            "objectLiteralDuplicateProperties": true,
+            "objectLiteralPropertyAssign": true,
+            "regexYFlag": true,
+            "regexUFlag": true,
+            "spread": true,
+            "superInFunctions": true,
+            "templateLiterals": true,
+            "binaryLiterals": true,
+            "octalLiterals": true,
+            "exponentiationOperator": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "es2022": true,
+        "node": true
+    },
+    "globals": {
+        "window": true,
+        "document": true,
+        "console": true,
+        "setTimeout": true,
+        "localStorage": true,
+        "clearTimeout": true,
+        "clearInterval": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@babel/recommended"
+    ],
+    "plugins": [
+        "@babel"
+    ],
+    "rules": {
+        "no-console": "off",
+        "no-unused-vars": ["warn", { 
+            "vars": "all",
+            "args": "after-used",
+            "ignoreRestSiblings": false,
+            "varsIgnorePattern": "Utils|wordBank|e|word|entry|card|topic"
+        }],
+        "@babel/no-unused-expressions": "error",
+        "no-var": "error",
+        "prefer-const": "error",
+        "prefer-arrow-callback": "error",
+        "arrow-parens": ["error", "as-needed"],
+        "arrow-spacing": ["error", { "before": true, "after": true }],
+        "no-duplicate-imports": "error",
+        "no-useless-rename": "error",
+        "no-unused-expressions": "error",
+        "no-use-before-define": ["error", { "functions": false }],
+        "no-undef": "error",
+        "no-shadow": "error",
+        "no-dupe-args": "error",
+        "no-dupe-keys": "error",
+        "no-duplicate-case": "error",
+        "no-empty": "error",
+        "no-empty-character-class": "error",
+        "no-ex-assign": "error",
+        "no-extra-boolean-cast": "error",
+        "no-extra-semi": "error",
+        "no-func-assign": "error",
+        "no-inner-declarations": ["error", "both"],
+        "no-irregular-whitespace": "error",
+        "no-obj-calls": "error",
+        "no-prototype-builtins": "error",
+        "no-sparse-arrays": "error",
+        "no-unexpected-multiline": "error",
+        "no-unreachable": "error",
+        "no-unsafe-finally": "error",
+        "use-isnan": "error",
+        "valid-typeof": "error"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".mjs"]
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "javascript.validate.enable": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.suggest.completeFunctionCalls": true,
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+    "javascript.implicitProjectConfig.target": "es2022",
+    "javascript.implicitProjectConfig.module": "esnext",
+    "javascript.implicitProjectConfig.allowJs": true,
+    "javascript.implicitProjectConfig.checkJs": true,
+    "javascript.implicitProjectConfig.strict": true,
+    "javascript.implicitProjectConfig.strictNullChecks": true,
+    "javascript.implicitProjectConfig.strictFunctionTypes": true,
+    "javascript.implicitProjectConfig.strictBindCallApply": true,
+    "javascript.implicitProjectConfig.strictPropertyInitialization": true,
+    "javascript.implicitProjectConfig.noImplicitAny": true,
+    "javascript.implicitProjectConfig.noImplicitThis": true,
+    "javascript.implicitProjectConfig.alwaysStrict": true,
+    "javascript.implicitProjectConfig.importsNotUsedAsValues": "error",
+    "javascript.implicitProjectConfig.allowSyntheticDefaultImports": true,
+    "javascript.implicitProjectConfig.allowImportingTsExtensions": true,
+    "javascript.implicitProjectConfig.resolveJsonModule": true,
+    "javascript.implicitProjectConfig.moduleResolution": "node",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    }
+}

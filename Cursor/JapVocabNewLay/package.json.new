@@ -1,0 +1,27 @@
+{
+  "name": "japvocab",
+  "version": "1.0.0",
+  "description": "Interactive Japanese Language Learning Platform",
+  "type": "module",
+  "main": "js/app.js",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint .",
+    "build": "babel src --out-dir dist --copy-files"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.15",
+    "@babel/eslint-parser": "^7.22.15",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}
